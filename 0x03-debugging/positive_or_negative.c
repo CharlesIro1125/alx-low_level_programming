@@ -3,9 +3,10 @@
 #include <stdio.h>
 /**
  * positive_or_negative - checks the number
+ * @n: int value passed to the function
  *
  * Description: the main funtion checks the
- *  number and output if sign or unsign.
+ * number and output if sign or unsign.
  * Return: null
  */
 int positive_or_negative(int n)
