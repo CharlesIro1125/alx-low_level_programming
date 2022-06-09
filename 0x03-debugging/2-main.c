@@ -14,6 +14,9 @@ int main(void)
 	b = -98;
 	c = 0;
 	largest = largest_number(a, b, c);
-	printf("%d is the largest number\n", largest);
+	if (largest == 'n')
+		printf("all values are equal\n");
+	else
+		printf("%d is the largest number\n", largest);
 	return (0);
 }
