@@ -9,5 +9,5 @@ int print_line(int n);
 int print_diagonal(int n);
 int _putchar(char c);
 int more_numbers(void);
-
-
+void print_square(int size);
+void print_triangle(int size);
