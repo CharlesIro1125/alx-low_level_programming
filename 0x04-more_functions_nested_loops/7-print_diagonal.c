@@ -10,10 +10,10 @@
  */
 int print_diagonal(int n)
 {
-	int count = 0; 
+	int count = 0;
 	int size;
 
-	if ( n > 0)
+	if (n > 0)
 	{
 		while (count < n)
 		{
@@ -23,12 +23,8 @@ int print_diagonal(int n)
 			_putchar('\n');
 			count++;
 		}
-
 	}
-	else 
+	else
 		_putchar('\n');
 	return (0);
-
 }
-
-			

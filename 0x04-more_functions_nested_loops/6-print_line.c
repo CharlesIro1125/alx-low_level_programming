@@ -3,7 +3,8 @@
  * print_line - draws a straight
  * line in the terminal
  *
- * @n: no of lines to be drawn
+ * @n: number of lines to be drawn
+ * Return: always (0)
  */
 int print_line(int n)
 {
