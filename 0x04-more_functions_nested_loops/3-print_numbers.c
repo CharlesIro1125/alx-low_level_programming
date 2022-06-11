@@ -4,10 +4,9 @@
  * print_numbers - prints the numbers
  * from 0 to 9
  *
- * description: prints the digit from
+ * Description: prints the digit from
  * 0 to 9
- * return: 0
- *
+ * Return: 0
  */
 int print_numbers(void)
 {
