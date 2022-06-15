@@ -16,7 +16,7 @@ void print_rev(char *str)
 
 	while (*(str + k) != p)
 		k++;
-	while (!(k < 0))
+	while (!(k < 1))
 	{
 		k--;
 		_putchar(*(str + k));
