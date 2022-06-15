@@ -15,22 +15,22 @@ void rev_string(char *str)
 	int w;
 	char p = '\0';
 
-	while (*(s + k) != p)
+	while (*(str + k) != p)
 		k++;
-	char v[k];
-
 	w = k;
+	char var[30];
+
 	while (!(k < 0))
 	{
 		k--;
-		*(v + j) = *(str + j);
+		*(var + j) = *(str + j);
 		if (k >= (w / 2))
 		{
 			*(str + j) = *(str + k);
 		}
 		else
 		{
-			*(str + j) = *(v + k);
+			*(str + j) = *(var + k);
 		}
 		j++;
 	}

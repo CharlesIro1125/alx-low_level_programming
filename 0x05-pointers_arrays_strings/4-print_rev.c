@@ -14,7 +14,7 @@ void print_rev(char *str)
 	int k = 0;
 	char p = '\0';
 
-	while (*(s + k) != p)
+	while (*(str + k) != p)
 		k++;
 	while (!(k < 0))
 	{
