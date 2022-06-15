@@ -18,7 +18,7 @@ void rev_string(char *str)
 	while (*(str + k) != p)
 		k++;
 	w = k;
-	char var[30];
+	char var[w];
 
 	while (!(k < 0))
 	{
