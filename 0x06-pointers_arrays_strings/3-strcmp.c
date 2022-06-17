@@ -28,7 +28,7 @@ int _strcmp(char *s1, char *s2)
 		else
 			break;
 	}
-	if (j == 0)	
+	if (j == 0)
 	{
 		j = *(s1 + k) - *(s2 + k);
 	}

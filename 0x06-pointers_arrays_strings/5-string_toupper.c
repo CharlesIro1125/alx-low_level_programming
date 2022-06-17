@@ -12,8 +12,8 @@
 char *string_toupper(char *a)
 {
 	int j = 0;
-	
 	char p = '\0';
+
 	while (*(a + j) != p)
 	{
 		if (*(a + j) >= 'a' && *(a + j) <= 'z')
@@ -22,5 +22,5 @@ char *string_toupper(char *a)
 		}
 		j++;
 	}
-	return (a);	
+	return (a);
 }
