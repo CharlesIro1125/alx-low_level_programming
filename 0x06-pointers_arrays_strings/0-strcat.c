@@ -20,9 +20,9 @@ char *_strcat(char *dest, char *src)
 		k++;
 	while (*(src + w) != p)
 	{
-		*(dest + k + w) = *(src + w);
+		*(dest + (k + w)) = *(src + w);
 		w++;
 	}
-	*(dest + k + w) = '\0';
+	*(dest + (k + w)) = p;
 	return (dest);
 }
