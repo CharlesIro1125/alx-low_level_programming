@@ -11,7 +11,7 @@
  * second string to the first
  * Return: returns a pionter of char type.
  */
-char * _strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
 	int k, w, j;
 	char p = '\0';
