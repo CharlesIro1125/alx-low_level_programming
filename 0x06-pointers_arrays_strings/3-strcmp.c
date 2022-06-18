@@ -15,9 +15,11 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int k, w, j = 0;
+	int k, j;
 	char p = '\0';
 
+	k = 0;
+	j = 0;
 	while (*(s1 + k) != p || *(s2 + k) != p)
 	{
 		if (j == 0)

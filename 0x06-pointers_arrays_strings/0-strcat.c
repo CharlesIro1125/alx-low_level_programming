@@ -11,18 +11,23 @@
  * second string to the first
  * Return: returns a pionter of char type.
  */
-char *_strcat(char *dest, char *src)
+char * _strcat(char *dest, char *src)
 {
-	int k, w = 0;
+	int k, w, j;
 	char p = '\0';
 
-	while (*(dest + k) != p)
+	k = 0;
+	w = 0;
+	j = 0;
+	while (dest[k] != p)
 		k++;
-	while (*(src + w) != p)
+	while (src[w] != p)
 	{
-		*(dest + (k + w)) = *(src + w);
+		j = k + w;
+		dest[j] = src[w];
 		w++;
 	}
-	*(dest + (k + w)) = p;
+	j = k + w;
+	dest[j] = p;
 	return (dest);
 }

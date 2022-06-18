@@ -17,9 +17,11 @@
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	int k, w = 0;
+	int k, w;
 	char p = '\0';
 
+	k = 0;
+	w = 0;
 	while (*(src + k) != p)
 		k++;
 	while (k > 0)
