@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strchr - function to search for the
  * presence of a string
@@ -10,7 +11,7 @@
 char *_strchr(char *s, char c)
 {
 	int j = 0, k = 0, i;
-	char p = "\0";
+	char p = '\0';
 	char *ptr = NULL;
 
 	while (*(s + k) != p)

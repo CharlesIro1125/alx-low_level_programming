@@ -11,9 +11,9 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int j = 0, k = 0, i, g;
-	unsigned int count = 0;
+	int count = 0;
 	char p = '\0';
-	
+
 	while (*(s + k) != p)
 		k++;
 	count = k;

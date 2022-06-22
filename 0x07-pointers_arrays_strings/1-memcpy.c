@@ -10,11 +10,11 @@
  */
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
-	int j = 0, k = 0, i, f, g;
-	char p = "\0";
+	int j = 0, k = 0, f, g;
+	char p = '\0';
 	int set = 0;
-
-	while (*(dest + j) != p)
+	int i;
+	while (*(dest + j) == p)
 		j++;
 	while (*(src + k) != p)
 		k++;
@@ -37,7 +37,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 			}
 		}
 	}
-	for (i = 0; i < n; i++)
+	for (i = 0; i < (signed)n; i++)
 	{
 		if (i < j)
 		{
