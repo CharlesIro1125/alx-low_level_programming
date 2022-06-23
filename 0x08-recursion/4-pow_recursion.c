@@ -7,7 +7,7 @@
  * @y: exponential power
  * Return: int
  */
-void _pow_recursion(int x, int y)
+int _pow_recursion(int x, int y)
 {
 	long long int l;
 
