@@ -1,22 +1,35 @@
 #include "main.h"
 
 /**
- * _pow_recursion - compute the exponential
- * results
- * @x: int base number to calculate
- * @y: exponential power
+ * _sqrt_recursion - compute the natural
+ * square root
+ * @n: the int to compute on
  * Return: int
  */
-void _pow_recursion(int x, int y)
+int _sqrt_recursion(int n)
+{
+	long long int r;
+
+	r = sqrt_recur(n, 1);
+	return (r);
+}
+/**
+ * sqrt_recur - performs recursive
+ * calculation
+ * @x: int to find its natural square root
+ * @n: int multiplier
+ * Return: int
+ */
+int sqrt_recur(int x, int n)
 {
 	long long int l;
 
-	if (y < 0)
+	if (n < 0)
 		return (-1);
-	if (y == 0)
-		return (1);
-	if (y == 1)
-		return (x);
-	l = n * _pow_recursion(x, y - 1);
+	if ((n * n) == x)
+		return (n);
+	if ((n * n) > x)
+		return (-1);
+	l = sqrt_recur(x, n + 1);
 	return (l);
 }
