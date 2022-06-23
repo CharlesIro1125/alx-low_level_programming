@@ -11,4 +11,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 int sqrt_recur(int x, int n);
 int prime_recur(int x, int n);
-int is_palindr(char *s, int n);
+int compare_char(char *s, int r, int c);
+int string_len(char *s, int n);
