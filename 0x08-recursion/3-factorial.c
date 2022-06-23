@@ -7,7 +7,7 @@
  * factorial
  * Return: int
  */
-void factorial(int n)
+int factorial(int n)
 {
 	int l;
 
