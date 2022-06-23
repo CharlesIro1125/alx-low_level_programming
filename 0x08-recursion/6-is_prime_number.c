@@ -8,7 +8,7 @@
  */
 int is_prime_number(int n)
 {
-	long long int r;
+	long int r;
 
 	r = prime_recur(n, 2);
 	return (r);
@@ -22,7 +22,7 @@ int is_prime_number(int n)
  */
 int prime_recur(int x, int n)
 {
-	long long int l;
+	long int l;
 
 	if (n < 2)
 		return (0);
