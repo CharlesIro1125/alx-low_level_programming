@@ -11,7 +11,6 @@
  */
 int main(int argc, char *argv[])
 {
-	char *endptr;
 	int i = argc - 1, j = 1;
 	long int num1 = 0, val;
 	char error[] = "Error";
@@ -19,9 +18,9 @@ int main(int argc, char *argv[])
 	for (j = 1; j <= i; j++)
 	{
 		errno = 0;
-		val = strtol(*(argv + j), &endptr, 10);
+		val = atoi(*(argv + j));
 		if ((errno == ERANGE && (val == LONG_MAX || val == LONG_MIN))
-				|| (errno != 0 && val == 0) || *endptr != '\0')
+				|| val == 0)
 		{
 			printf("%s\n", error);
 			return (1);
