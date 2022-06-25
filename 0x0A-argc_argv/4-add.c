@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
 		errno = k;
 		val = strtol(*(argv + j), &endp, 10);
 		if ((errno == ERANGE && (val == LONG_MAX || val == LONG_MIN))
-				|| (errno != k && val == 0))
+				|| (errno != k && val == 0) || *endp != '\0')
 		{
 			printf("%s\n", error);
 			return (1);
