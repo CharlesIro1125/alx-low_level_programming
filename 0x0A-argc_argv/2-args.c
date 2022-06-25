@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 	char *name;
 	int j;
 
-	j = 1;
+	j = 0;
 	while (j < argc)
 	{
 		name = *(argv + j);
