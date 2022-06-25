@@ -28,9 +28,7 @@ int main(int argc, char *argv[])
 		}
 		num1 += val;
 		if (j == i)
-		{
 			printf("%ld\n", num1);
-		}
 	}
 	if (!(argc - 1))
 	{
