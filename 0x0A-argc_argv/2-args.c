@@ -9,16 +9,13 @@
 int main(int argc, char *argv[])
 {
 	char *name;
-	int i;
 	int j;
 
 	j = 1;
 	while (j < argc)
 	{
 		name = *(argv + j);
-		for (i = 0; *(name + i) != '\0'; i++)
-			_putchar(*(name + i));
-		_putchar('\n');
+		printf("%s\n", name);
 		j++;
 	}
 	return (0);
