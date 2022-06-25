@@ -12,16 +12,16 @@
 int main(int argc, char *argv[])
 {
 	char *endp;
-	int i = argc - 1, j = 1;
+	int i = argc - 1, j = 1,k = 0;
 	long int num1 = 0, val;
 	char error[] = "Error";
 
 	for (j = 1; j <= i; j++)
 	{
-		errno = 0;
+		errno = k;
 		val = strtol(*(argv + j), &endp, 10);
 		if ((errno == ERANGE && (val == LONG_MAX || val == LONG_MIN))
-				|| (errno != 0 && val == 0))
+				|| (errno != k && val == 0))
 		{
 			printf("%s\n", error);
 			return (1);
@@ -31,9 +31,6 @@ int main(int argc, char *argv[])
 			printf("%ld\n", num1);
 	}
 	if (!(argc - 1))
-	{
-		printf("%d\n", 0);
-		return (1);
-	}
+		printf("%d\n", k);
 	return (0);
 }
