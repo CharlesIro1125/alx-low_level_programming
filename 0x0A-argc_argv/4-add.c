@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	char *endp;
-	int i = argc - 1, j = 1,k = 0;
+	int i = argc - 1, j = 1, k = 0;
 	long int num1 = 0, val;
 	char error[] = "Error";
 
