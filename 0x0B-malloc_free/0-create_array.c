@@ -15,6 +15,8 @@ char *create_array(unsigned int size, char c)
 	if (size == 0)
 		return (NULL);
 	tar = (char *)malloc(sizeof(c) * size);
+	if (tar == NULL)
+		return (NULL);
 	for (i = 0; i < size; i++)
 	{
 		*(tar + i) = c;
