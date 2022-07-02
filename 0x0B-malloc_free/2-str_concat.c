@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
- * *str_conca - concatenate two string
+ * *str_concat - concatenate two string
  * @s1: string 1
  * @s2: string 2
  * Return: pointer
  */
-char *str_conca(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	char *tar;
 	int i, p, k;
