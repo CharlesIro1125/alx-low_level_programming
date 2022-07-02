@@ -21,9 +21,9 @@ char *_strdup(char *str)
 	tar = (char *)malloc(sizeof(char) * i);
 	if (tar == NULL)
 		return (NULL);
-	for (p = 0; p < i; p++)
+	for (p = 0; p <= i; p++)
 	{
-		*(tar + i) = *(str + i);
+		*(tar + p) = *(str + p);
 	}
 	return (tar);
 }
