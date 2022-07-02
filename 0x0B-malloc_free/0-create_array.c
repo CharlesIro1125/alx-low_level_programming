@@ -19,5 +19,5 @@ char *create_array(unsigned int size, char c)
 	{
 		*(tar + i) = c;
 	}
-	return (0);
+	return (tar);
 }
