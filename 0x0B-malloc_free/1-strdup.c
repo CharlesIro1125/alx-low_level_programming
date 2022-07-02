@@ -18,10 +18,11 @@ char *_strdup(char *str)
 		return (NULL);
 	while (*(str + i) != '\0')
 		i++;
+	i++;
 	tar = (char *)malloc(sizeof(char) * i);
 	if (tar == NULL)
 		return (NULL);
-	for (p = 0; p <= i; p++)
+	for (p = 0; p < i; p++)
 	{
 		*(tar + p) = *(str + p);
 	}
