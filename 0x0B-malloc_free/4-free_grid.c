@@ -1,4 +1,4 @@
-#include <stdlib.c>
+#include <stdlib.h>
 #include "main.h"
 /**
  * free_grid - A function that frees the
