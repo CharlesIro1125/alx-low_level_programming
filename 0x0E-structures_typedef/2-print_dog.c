@@ -1,5 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * print_dog - initialize struct
  * @d: struct type pointer
@@ -13,9 +14,9 @@ void print_dog(struct dog *d)
 
 	if (d == NULL)
 		return;
-	if (name == NULL)
+	if (name == 0)
 		name = "(nil)";
-	if (owner == NULL)
+	if (owner == 0)
 		owner = "(nil)";
 	printf("Name: %s\nAge: %.6f\nOwner: %s\n", name, age, owner);
 }
