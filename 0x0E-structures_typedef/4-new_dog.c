@@ -12,7 +12,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *d_dog;
 	dog_t y_dog;
-
+	
+	if (name == NULL || owner == NULL)
+		return (NULL);
 	y_dog.name = name;
 	y_dog.age = age;
 	y_dog.owner = owner;
