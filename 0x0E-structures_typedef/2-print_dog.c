@@ -1,4 +1,5 @@
 #include "dog.h"
+#include <stdlib.h>
 #include <stdio.h>
 /**
  * print_dog - initialize struct
@@ -17,14 +18,10 @@ void print_dog(struct dog *d)
 		name = "(nil)";
 	if (owner == NULL)
 		owner = "(nil)";
-	if (age == NULL)
+	if (age == 0.0)
 	{
 		printf("Name: %s\nAge: %s\nOwner: %s\n", name, "(nil)", owner);
-		free(name);
-		free(owner);
 		return;
 	}
 	printf("Name: %s\nAge: %.6f\nOwner: %s\n", name, age, owner);
-	free(name);
-	free(owner);
 }
