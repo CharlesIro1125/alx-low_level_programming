@@ -8,12 +8,15 @@
  */
 void print_dog(struct dog *d)
 {
-	char *name = d->name;
-	char *owner = d->owner;
-	float age = d->age;
+	char *name;
+	char *owner;
+	float age;
 
 	if (d == NULL)
 		return;
+	name = d->name;
+	owner = d->owner;
+	age = d->age;
 	if (name == 0)
 		name = "(nil)";
 	if (owner == 0)
