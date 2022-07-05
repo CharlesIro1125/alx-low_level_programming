@@ -1,1 +1,1 @@
-structure object
+structure object type
