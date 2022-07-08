@@ -13,8 +13,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	va_list var;
 	unsigned int j, count = 0;
 
-	//if (*separator == '\')
-		//return;
+	/**
+	* if (*separator == '\0')
+	* return;
+	*
+	*/
 	va_start(var, n);
 	for (j = va_arg(var, int); count < n; count++)
 	{
