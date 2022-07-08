@@ -14,17 +14,15 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *j;
 	unsigned int count = 0;
 
-	if (*separator == '\0' || *separator == ' ')
-		return;
 	va_start(var, n);
 	for (j = va_arg(var, char *); count < n; count++)
 	{
-		if (*j == '\0' || *j == ' ')
-			printf("%s", "(nil)");
-		else
+		if (j)
 			printf("%s", j);
-		if (count < n - 1)
-			printf("%c", *separator);
+		else
+			printf("%s", "(nil)");
+		if (count < n - 1 && separator) 
+			printf("%s", separator);
 		j = va_arg(var, char *);
 	}
 	printf("\n");
