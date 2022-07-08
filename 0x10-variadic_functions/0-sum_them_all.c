@@ -1,4 +1,5 @@
 #include <stdarg.h>
+#include <stdlib.h>
 
 /**
  * sum_them_all - a variadic function of sum
@@ -7,15 +8,18 @@
  */
 int sum_them_all(const unsigned int arg1, ...)
 {
-	va_list va;
-	unsigned int i;
+	va_list var;
+	unsigned int j, i = 0;
 	int sum = 0;
 
 	if (arg1 == 0)
 		return (0);
-	va_start(va, arg1);
-	for (i = arg1; i != NULL, i = va_agr(va, int))
-		sum += i;
-	va_end(va);
+	va_start(var, arg1);
+	for (j = va_arg(var, int); i < arg1; j = va_arg(var, int))
+	{
+		sum += j;
+		i++;
+	}
+	va_end(var);
 	return (sum);
 }
