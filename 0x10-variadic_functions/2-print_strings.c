@@ -9,7 +9,7 @@
  * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
-{
+{	
 	va_list var;
 	char *j;
 	unsigned int count = 0;
@@ -27,6 +27,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%c ", *separator);
 		j = va_arg(var, char *);
 	}
-	printf("\n");
 	va_end(var);
+	printf("\n");
 }
