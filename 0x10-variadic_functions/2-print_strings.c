@@ -9,7 +9,7 @@
  * Return: void
  */
 void print_strings(const char *separator, const unsigned int n, ...)
-{	
+{
 	va_list var;
 	char *j;
 	unsigned int count = 0;
@@ -21,7 +21,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s", j);
 		else
 			printf("%s", "(nil)");
-		if (count < (n - 1) && separator) 
+		if (count < (n - 1) && separator)
 			printf("%s", separator);
 		j = va_arg(var, char *);
 	}
