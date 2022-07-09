@@ -1,5 +1,4 @@
 #include <stdlib.h>
-
 /**
  * int_index - function that returns
  * an index
