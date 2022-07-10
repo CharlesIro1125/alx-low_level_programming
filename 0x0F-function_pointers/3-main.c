@@ -27,7 +27,7 @@ int main(int args, char *array[])
 		if (!result)
 		{
 			printf("Error\n");
-                        exit(99);
+			exit(99);
 		}
 		else
 			printf("%d\n", result(num1, num2));
