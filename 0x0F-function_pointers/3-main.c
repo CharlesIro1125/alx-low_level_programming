@@ -17,14 +17,14 @@ int main(int args, char *array[])
 	{
 		num1 = atoi(*(array + 1));
 		num2 = atoi(*(array + 3));
-		if (!num2)
+		if (!num2 && (array[2][0] == '/' || array[2][0] == '%'))
 		{
 			printf("Error\n");
 			exit(100);
 		}
 		s = *(array + 2);
 		result = get_op_func(s);
-		if (!result)
+		if (!result || (array[2][1] != '\0'))
 		{
 			printf("Error\n");
 			exit(99);
