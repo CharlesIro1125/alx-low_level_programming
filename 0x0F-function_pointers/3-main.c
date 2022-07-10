@@ -10,19 +10,32 @@
 int main(int args, char *array[])
 {
 	int num1, num2;
-	long int result;
+	int (*result)(int, int);
 	char *s;
 
 	if (array && args == 4)
 	{
-		if (array[1] && array[3] && array[2])
+		num1 = atoi(*(array + 1));
+		num2 = atoi(*(array + 3));
+		if (!num2)
 		{
-			num1 = atoi(*(array + 1));
-			num2 = atoi(*(array + 3));
-			s = *(array + 2);
-			result = get_op_func(s)(num1, num2);
-			printf("%ld\n", result);
+			printf("Error\n");
+			exit(100);
 		}
+		s = *(array + 2);
+		result = get_op_func(s);
+		if (!result)
+		{
+			printf("Error\n");
+                        exit(99);
+		}
+		else
+			printf("%d\n", result(num1, num2));
+	}
+	else
+	{
+		printf("Error\n");
+		exit(98);
 	}
 	return (0);
 }
