@@ -1,6 +1,5 @@
 #include "lists.h"
 #include "lists.h"
-
 /**
  * getlen - function to return the length
  * of a string.
@@ -28,7 +27,6 @@ size_t print_list(const list_t *h)
 
 	if (h == NULL)
 		return (-1);
-
 	while (h != NULL)
 	{
 		if (h->str != NULL)
