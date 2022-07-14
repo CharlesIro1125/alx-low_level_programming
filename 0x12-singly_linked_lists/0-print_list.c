@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
  * getlen - function to return the length
  * of a string.
@@ -23,8 +22,10 @@ unsigned int getlen(char *s)
 size_t print_list(const list_t *h)
 {
 	unsigned int i;
-	size_t l;
+	size_t l = 0;
 
+	if (h == NULL)
+		return ('\0');
 	while (h != NULL)
 	{
 		if (h->str != NULL)
