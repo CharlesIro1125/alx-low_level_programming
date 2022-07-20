@@ -7,8 +7,9 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *prev;
-	listint_t *first = *head;
+	listint_t *first;
 
+	first = *head;
 	if (head == NULL)
 	{
 		printf("Freed !\n");
