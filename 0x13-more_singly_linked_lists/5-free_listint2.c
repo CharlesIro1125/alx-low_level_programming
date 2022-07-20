@@ -11,11 +11,11 @@ void free_listint2(listint_t **head)
 
 	if (head == NULL)
 	{
+		printf("freed !");
 		return;
 	}
 	if (*head == NULL)
 	{
-		free(*head);
 		return;
 	}
 	while (*head != NULL)
