@@ -10,9 +10,15 @@ void free_listint2(listint_t **head)
 	listint_t *first = *head;
 
 	if (head == NULL)
+	{
 		printf("freed !\n");
+		return;
+	}
 	if (*head == NULL)
+	{
 		free(*head);
+		return;
+	}
 	while (*head != NULL)
 	{
 		prev = *head;
