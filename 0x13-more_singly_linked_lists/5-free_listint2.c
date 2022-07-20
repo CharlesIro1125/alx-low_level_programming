@@ -10,7 +10,7 @@ void free_listint2(listint_t **head)
 	listint_t *first = *head;
 
 	if (head == NULL)
-		return;
+		printf("freed !\n");
 	if (*head == NULL)
 		free(*head);
 	while (*head != NULL)
