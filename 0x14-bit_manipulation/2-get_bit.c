@@ -32,7 +32,7 @@ int get_bit(unsigned long int n, unsigned int index)
 			bits[j - k] = '0';
 	}
 	bits[j + 1] = '\0';
-	if (index > j)
+	if (index > j + 1)
 	{
 		free(bits);
 		return (-1);
