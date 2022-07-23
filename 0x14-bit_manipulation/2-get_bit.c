@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	char *bits;
 
 	if (n == '\0' || index == '\0') 
-		return (-1);
+		return ('\0');
 	h = n;
 	while (h)
 	{
