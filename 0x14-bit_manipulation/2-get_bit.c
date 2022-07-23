@@ -12,7 +12,7 @@ int get_bit(unsigned long int n, unsigned int index)
 	char *bits;
 
 	if (n == '\0')
-		return ('0');
+		return (0);
 	h = n;
 	while (h)
 	{
@@ -32,6 +32,11 @@ int get_bit(unsigned long int n, unsigned int index)
 			bits[j - k] = '0';
 	}
 	bits[j + 1] = '\0';
+	if (index > j)
+	{
+		free(bits);
+		return (-1);
+	}
 	res = bits[j - index] - '0';
 	free(bits);
 	return (res);
