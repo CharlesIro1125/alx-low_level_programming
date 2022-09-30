@@ -34,12 +34,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		nodes[index] = temp;
 		return (1);
 	}
-	if (head->key == NULL)
-	{
-		temp->next = NULL;
-		head = temp;
-		return (1);
-	}
 	temp->next = head;
 	head = temp;
 	return (1);
