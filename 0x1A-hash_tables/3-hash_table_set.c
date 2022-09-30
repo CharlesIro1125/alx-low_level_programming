@@ -28,13 +28,13 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	temp->key = (char *)key;
 	temp->value = (char *)value;
 	head = nodes[index];
-	if (head == NULL)
+	if (head == NULL || head->key == NULL)
 	{
 		temp->next = NULL;
 		nodes[index] = temp;
 		return (1);
 	}
-	else
+	if (head->key != NULL)
 	{
 		temp->next = head;
 		nodes[index] = temp;
