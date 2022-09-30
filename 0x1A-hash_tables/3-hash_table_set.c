@@ -35,7 +35,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	while (head != NULL)
 	{
-		if (strcmp(head->key, temp->key) == 0)
+		if (head->key == temp->key)
 		{
 			free(head->value);
 			head->value = temp->value;
