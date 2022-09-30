@@ -36,10 +36,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	}
 	if (head->key == NULL)
 	{
-		head->key = (char *)key;
-		head->value = (char *)value;
-		head->next = NULL;
-		free(temp);
+		temp->next = NULL;
+		head = temp;
 		return (1);
 	}
 	temp->next = head;
