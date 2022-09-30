@@ -20,8 +20,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	nodes = ht->array;
 	index = key_index((unsigned char *)key, ht->size);
 	head = nodes[index];
-	if (head == NULL)
-		return (0);
 	if (head->key == NULL)
 	{
 		head->next = NULL;
